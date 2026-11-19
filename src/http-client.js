@@ -1,5 +1,5 @@
 'use strict';
-const request = require('request');
+const request = require('../lib/request-compat.cjs');
 
 /** GET a URL and resolve with parsed JSON. Rejects on network error or non-2xx. */
 function getJson(url, { timeoutMs = 3000 } = {}) {
